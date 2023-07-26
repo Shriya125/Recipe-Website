@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+}
+
+nav {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+
+#navList {
+    list-style-type: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    width: 100%;
+    padding: 15px;
+}
+
+.navContainer {
+    width: 100vw;
+    /* background-color: rgb(133, 133, 151); */
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: none;
+    background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
+}
+
+#navLogo {
+    font-size: 3.5rem;
+    color: rgb(103, 199, 191);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(250, 251, 251);
+}
+
+#navItems {
+    display: flex;
+    gap: 40px;
+    font-size: 1.8rem;
+}
+
+#navItems a:hover{
+    color: rgba(16, 87, 145, 0.818);
+}
+
+body{
+    background-image: url("bg-img.jpeg");
+    background-size: cover;  
+    background-repeat: no-repeat;
+}
+
+.contentBox {
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: white;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+.leftbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftbox h2 {
+    font-size: 2.5rem;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: rgb(222, 198, 45);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#ingredients h3 {
+    font-size: 1.7rem;
+    margin-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(12, 12, 12, 0.753);
+}
+
+#ingredients ul {
+    font-size: 1.3rem;
+    margin-left: 25px;
+    color: rgba(0, 0, 0, 0.852);
+}
+
+.list2{
+    margin-top: 7px;
+}
+
+#recipe h3 {
+    font-size: 1.7rem;
+    margin-bottom: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(12, 12, 12, 0.753);
+}
+
+#recipe ol {
+    font-size: 1.3rem;
+    margin-left: 25px;
+    color: rgba(0, 0, 0, 0.852);
+}
+
+.rightbox {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s ;
+    box-shadow: 1px 1px 10px black; 
+    border-radius: 20px;
+}
+
+.rightbox img {
+    height: 450px;
+    width: 400px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;   
+    vertical-align: bottom;       
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* transition-property: all;
+    transition-duration: 4s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s; */
+}
+
+.rightbox:hover {
+    transform: scale(1.1);
+}
+
+.rightbox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(90, 86, 86, 0.419);
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightbox:hover .overlay {
+    opacity: 1;
+}
+
+.rightbox .overlay span {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footerBox {
+    background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footerBox p {
+    color: rgb(252, 252, 250);
+}
